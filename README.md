@@ -18,3 +18,11 @@
 - [ ] pid算法的验证
 
 ### 球位置识别
+
+# PR要求
++ 开发时新建分支用于开发
++ 从开发所用分支进行PR
++ 尽量少的commit
+
+# 代码规范
+[参考rtt代码规范](https://github.com/RT-Thread/rt-thread/blob/master/documentation/coding_style_cn.md)
