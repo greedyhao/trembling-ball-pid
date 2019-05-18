@@ -1,0 +1,14 @@
+import rtconfig
+from building import *
+
+cwd     = GetCurrentDir()
+inc     = [cwd + '/include']
+src     = []
+
+src += Glob('source/sensor/sensor_manager.c')
+src += Glob('source/controler/controller.c')
+src += Glob('source/controler/pid.c')
+
+group = DefineGroup('FrameWork', src, depend = [''], CPPPATH = inc)
+
+Return('group')
