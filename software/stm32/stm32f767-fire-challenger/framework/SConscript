@@ -8,6 +8,7 @@ src     = []
 src += Glob('source/sensor/sensor_manager.c')
 src += Glob('source/controler/controller.c')
 src += Glob('source/controler/pid.c')
+src += Glob('source/controler/pwm_gen.c')
 
 group = DefineGroup('FrameWork', src, depend = [''], CPPPATH = inc)
 

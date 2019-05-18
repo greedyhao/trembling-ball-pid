@@ -536,6 +536,11 @@
               <FileType>1</FileType>
               <FilePath>framework\source\controler\pid.c</FilePath>
             </File>
+            <File>
+              <FileName>pwm_gen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>framework\source\controler\pwm_gen.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
