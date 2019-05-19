@@ -75,7 +75,7 @@ static void pwm_gen_entry(void *p)
 	rt_timer_init(&timer_cntl_pwm, "timer_cntl_pwm",
 					timer_cntl_pwm_update,
 					RT_NULL,
-					6,
+					30,
 					RT_TIMER_FLAG_PERIODIC | RT_TIMER_FLAG_SOFT_TIMER);
 	rt_timer_start(&timer_cntl_pwm);
 
@@ -98,7 +98,7 @@ _exit:
 int pwm_gen_init(void)
 {
     rt_thread_t thread = RT_NULL;
-    thread = rt_thread_create("pwm_gen", pwm_gen_entry, RT_NULL, 2*512, 14, 10);
+    thread = rt_thread_create("pwm_gen", pwm_gen_entry, RT_NULL, 2*512, 14, 5);
 
     if (thread == RT_NULL)
     {

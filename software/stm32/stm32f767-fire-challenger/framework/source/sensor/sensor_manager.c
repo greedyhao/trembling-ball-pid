@@ -57,7 +57,7 @@ static rt_err_t camera_rx_ind(rt_device_t dev, rt_size_t size)
     return RT_EOK;
 }
 
-rt_err_t device_sensor_init(void *p)
+int device_sensor_init(void)
 {
     // rt_err_t res = RT_EOK;
 

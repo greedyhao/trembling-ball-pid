@@ -1,0 +1,17 @@
+[
+ {
+  "path": "/packages/peripherals/MotionDriver2RTT", 
+  "ver": "latest", 
+  "name": "MOTIONDRIVER2RTT"
+ }, 
+ {
+  "path": "/packages/peripherals/pca9685", 
+  "ver": "latest", 
+  "name": "PCA9685"
+ }, 
+ {
+  "path": "/packages/misc/MultiButton", 
+  "ver": "v1.0.2", 
+  "name": "MULTIBUTTON"
+ }
+]

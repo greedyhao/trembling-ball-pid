@@ -73,6 +73,24 @@
 
 /* Device virtual file system */
 
+#define RT_USING_DFS
+#define DFS_USING_WORKDIR
+#define DFS_FILESYSTEMS_MAX 2
+#define DFS_FILESYSTEM_TYPES_MAX 2
+#define DFS_FD_MAX 16
+#define RT_USING_DFS_ELMFAT
+
+/* elm-chan's FatFs, Generic FAT Filesystem Module */
+
+#define RT_DFS_ELM_CODE_PAGE 437
+#define RT_DFS_ELM_WORD_ACCESS
+#define RT_DFS_ELM_USE_LFN_3
+#define RT_DFS_ELM_USE_LFN 3
+#define RT_DFS_ELM_MAX_LFN 255
+#define RT_DFS_ELM_DRIVES 2
+#define RT_DFS_ELM_MAX_SECTOR_SIZE 512
+#define RT_DFS_ELM_REENTRANT
+#define RT_USING_DFS_DEVFS
 
 /* Device Drivers */
 
@@ -84,6 +102,12 @@
 #define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_PWM
+#define RT_USING_SDIO
+#define RT_SDIO_STACK_SIZE 512
+#define RT_SDIO_THREAD_PRIORITY 15
+#define RT_MMCSD_STACK_SIZE 1024
+#define RT_MMCSD_THREAD_PREORITY 22
+#define RT_MMCSD_MAX_PARTITION 16
 
 /* Using WiFi */
 
@@ -94,6 +118,7 @@
 /* POSIX layer and C standard library */
 
 #define RT_USING_LIBC
+#define RT_USING_POSIX
 
 /* Network */
 
@@ -187,6 +212,12 @@
 #define BSP_USING_PWM
 #define BSP_USING_PWM3
 #define BSP_USING_PWM3_CH2
+#define BSP_USING_I2C1
+
+/* Notice: PD12 --> 60; PD13 --> 61 */
+
+#define BSP_I2C1_SCL_PIN 60
+#define BSP_I2C1_SDA_PIN 61
 #define BSP_USING_I2C2
 
 /* Notice: PH4 --> 116; PH5 --> 117 */
